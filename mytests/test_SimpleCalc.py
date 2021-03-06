@@ -38,7 +38,7 @@ class TestSimpleCalc(unittest.TestCase):
 
     def test_assertIs_multiply(self):
         self.cal.a = 4
-        self.cal.b = 4
+        self.cal.b = 1.2
         self.assertIs(type(1.2), type(self.cal.mul()))
 
     def test_divison(self):
