@@ -24,7 +24,7 @@ class TestSimpleCalc(unittest.TestCase):
     def tearDown(self):
         print("In tearDown() method")
         self.cal.a = 0
-        self.cal.b = 0
+        self.cal.b = 1
 
     def test_simpleadd(self):
         self.assertAlmostEqual(10, self.cal.add(),delta=3)
